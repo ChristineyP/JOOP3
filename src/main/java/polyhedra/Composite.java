@@ -129,6 +129,7 @@ public class Composite
         bld.append(String.format("%d polyhedra%n", this.size()));
 
         // Maybe a loop can help...
+        
 
         return bld.toString();
     }
