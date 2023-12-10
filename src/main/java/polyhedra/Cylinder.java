@@ -124,7 +124,7 @@ public class Cylinder
         // This is a placeholder...
         // return false;
 
-        // Need to add lhs and height
+        // Need to add height
         if (!(rhs instanceof Cylinder)) {
             return false;
         }
@@ -132,7 +132,6 @@ public class Cylinder
         Cylinder rhsCylinder = (Cylinder) rhs;
 
         return Point.equalWithinDftThreshold(this.radius, rhsCylinder.radius);
-
     }
 
     @Override
@@ -166,7 +165,7 @@ public class Cylinder
     @Override
     public void fromDimensions(double[] theDims)
     {
-        this.radius = theDims[0];
+        this.radius = theDims[1];
         this.height = theDims[0];
     }
 }
